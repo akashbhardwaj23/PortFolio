@@ -19,12 +19,12 @@ function Header() {
         <div className="main-content">
         <ul className="flex ">
             <li className="list-none ">
-              <Link to={''}>
+              <Link to={''} spy= {true} smooth={true} offset={50} duration={500}>
               <Component name={"Home"}/>
               </Link>
                
             </li>
-            <li><Link to='/about'>
+            <li><Link to='/about' spy= {true} smooth={true} offset={50} duration={500}>
             <Component name={"About"}/>
             </Link>
             </li>

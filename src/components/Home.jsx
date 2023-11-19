@@ -32,7 +32,7 @@ function Home() {
                 </a>
             </div>
             <div className='w-20'>
-                <a href="" target='_blank' className='sidebarA w-full block p-4 rounded-md no-underline'>
+                <a href="https://github.com/akash23-ai" target='_blank' className='sidebarA w-full block p-4 rounded-md no-underline'>
                     <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg" alt="" className='w-full' />
                 </a>
             </div>

@@ -19,7 +19,7 @@ function Contact() {
                 </h2>
 
                 <div className=' shadow-sm text-white p-16 max-w-7xl text-right w-11/12 rounded-md mt-20 mr-auto mb-0 ml-auto  border'>
-                    <form action="#" method='post'>
+                    <form action="https://formbold.com/s/3wkJA" method='POST' target='_blank'>
                         <input type="hidden" value={"form"} />
                         <Input name= {'Name'} type={'text'} placeholder={'Enter Your Name'}/>
                         <Input name= {'Email'} type={'email'} placeholder={'Enter Your Email'}/>
