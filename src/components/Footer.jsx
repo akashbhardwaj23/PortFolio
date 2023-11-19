@@ -10,9 +10,7 @@ function Footer() {
               Akash Kumar Bhardwaj
             </h2>
             <p className="mt-8 text-2xl leading-7">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              dolorem, reprehenderit cumque maiores harum cum! Aliquam ipsa
-              dolor cumque perspiciatis laborum, consectetur
+              
             </p>
           </div>
           <div className="order-2">
