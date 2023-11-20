@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Button({children}) {
+function Button({children, isContact = false}) {
   return (
-    <button className='w-4/12 py-8 px-16 text-2xl bg-purple-700 text-white uppercase tracking-wide inline-block font-bold rounded-md'> 
+    <button className={`${isContact? "w-full": "w-4/12"} py-8 px-16 text-2xl bg-purple-700 text-white uppercase tracking-wide inline-block font-bold rounded-md `}> 
         {children} 
     </button>
   )

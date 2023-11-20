@@ -1,8 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+
+
+/* First i am doing regular css for responsiveness than i will do this in tailwind */
+
+*, ::after, ::before {
   margin: 0;
   box-sizing: inherit;
   font-family: inherit;
@@ -10,6 +17,25 @@
 html {
   font-size: 62.5%;
 }
+
+@media only screen and (max-width : 75em) {
+  html {
+    font-size: 59%;
+  }
+}
+@media only screen and (max-width:56.25em) {
+  html {
+    font-size:56%
+  }
+}
+
+@media only screen and (min-width:112.5em) {
+  html {
+    font-size:65%
+  }
+}
+
+
 body {
   line-height: 1.5;
   box-sizing: border-box;
@@ -57,10 +83,29 @@ body {
   transform: translate(-50%,-50%);
 }
 
+@media only screen and (max-width:37.5em) {
+  .heading {
+    font-size:4.5rem
+  }
+}
+
+@media only screen and (max-width:37.5em){
+  .primaryText {
+    font-size:2rem;
+}
+}
+
 .sidebar {
   transform: translateY(-50%);
   background: #fff;
   box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+}
+
+@media only screen and (max-width: 56.25em) {
+
+  .sidebar {
+    display: none;
+  }
 }
 
 
@@ -74,6 +119,17 @@ transition-delay: 0s;
 
 .sidebarA:hover {
   background:rgba(97, 30, 240, 0.2)
+}
+
+
+
+@media only screen and (max-width : 56.25em){
+  .picofme {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1.2rem;
+    
+  }
 }
 
 .mouseContainer {
@@ -124,6 +180,10 @@ transition-delay: 0s;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
+}
+
+.skill {
+  font-family: 'Vina Sans', sans-serif;
 }
 
 .contactDiv {

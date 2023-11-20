@@ -24,7 +24,7 @@ function Contact() {
                         <Input name= {'Name'} type={'text'} placeholder={'Enter Your Name'}/>
                         <Input name= {'Email'} type={'email'} placeholder={'Enter Your Email'}/>
                         <Input name= {'Message'} type={'text'} placeholder={'Enter Your Message'}/>
-                        <Button children = {'Submit'}/>
+                        <Button children = {'Submit'} isContact/>
                     </form>
                 </div>
         </div>

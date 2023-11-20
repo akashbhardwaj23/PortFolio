@@ -5,9 +5,9 @@ function Home() {
   return (
     <div className='homeDiv text-white bg-center h-screen min-h-min-h-2 max-h-max relative'>
         <div className='homeDiv2 absolute top-1/2 left-1/2 max-w-4.5xl w-11/12'>
-            <h1 className='text-8xl uppercase tracking-wider text-center text-gray-900 font-extrabold'>Hey, Akash This Side</h1>
+            <h1 className='heading text-8xl uppercase tracking-wider text-center text-gray-900 font-extrabold'>Hey, Akash This Side</h1>
             <div className='mt-12 mx-auto mb-0 max-w-7xl'>
-                <p className='text-gray-900 text-4xl text-center w-full leading-relaxed'>A FrontEnd Web Developer building the Frontend and Backend of Websites that lead to a overall success</p>
+                <p className='primaryText text-gray-900 text-4xl text-center w-full leading-relaxed'>A FrontEnd Web Developer building the Frontend and Backend of Websites that lead to a overall success</p>
             </div>
 
             <div className='mt-20 text-center'>
