@@ -34,19 +34,19 @@ function About() {
                         Skills
                     </h3>
                     <div className='skills flex flex-wrap'>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>HTML</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>CSS</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>Javascript</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>React</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>Tailwind css</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>Git</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>Github</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>Java</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>Python</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>Ethical Hacking</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>SQL Basics</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>MongoDB</div>
-                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-500'>CLI</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>HTML</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>CSS</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>Javascript</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>React</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>Tailwind css</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>Git</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>Github</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>Java</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>Python</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>Ethical Hacking</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>SQL Basics</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>MongoDB</div>
+                        <div className='skill py-4 px-8 mb-6 mr-6 text-2xl bg-gray-200 rounded-md font-semibold text-gray-700'>CLI</div>
                     </div>
                 </div>
             </div>

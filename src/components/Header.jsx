@@ -1,5 +1,6 @@
 import React from "react";
 import Component from "./Component";
+import picOfMe from '../assets/picofme.png'
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -10,14 +11,14 @@ function Header() {
         <div className="hover:text-purple-600 flex items-center text-gray-700 dark:text-white cursor-pointer transition-colors duration-300 ease-linear delay-0">
           <div className="picofme w-20 h-20 rounded-3xl overflow-hidden mr-6 bg-purple-700">
             <img
-              src="src/assets/picofme.png"
+              src={picOfMe}
               alt=""
               className="w-full h-full object-cover object-center block"
             />
           </div>
-          <span className="text-2xl uppercase font-bold tracking-wide">
+          <Link to={''} spy={true} smooth={true} offset={50} duration={500}><span className="text-2xl uppercase font-bold tracking-wide">
             Akash Kumar Bhardwaj
-          </span>
+          </span></Link>
         </div>
 
         <div className="main-content">
