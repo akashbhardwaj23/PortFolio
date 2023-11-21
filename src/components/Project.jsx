@@ -36,7 +36,7 @@ function Project() {
                 globally
               </p>
 
-              <Button children={"Link"} />
+              <Button children={"Password Changer"} />
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ function Project() {
                 globally
               </p>
 
-              <Button children={"Link"} />
+              <Button children={"Mega Site"} />
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ function Project() {
                 globally
               </p>
 
-              <Button children={"Link"} />
+              <Button children={"Bg Color Changer"} />
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ function Project() {
                 globally
               </p>
 
-              <Button children={"Link"} />
+              <Button children={"Theme Switcher"} />
             </div>
           </div>
         </div>
