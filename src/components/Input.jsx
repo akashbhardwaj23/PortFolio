@@ -1,6 +1,6 @@
 import React from "react";
 
-function Input({name, type, placeholder}) {
+function Input({name, type, placeholder,value}) {
   return (
     <div className="mb-16">
       <label
@@ -14,6 +14,7 @@ function Input({name, type, placeholder}) {
         id={name}
         required
         placeholder={placeholder}
+        value={value}
         className="placeholder:opacity-100 placeholder:text-gray-600 placeholder:font-semibold placeholder:text-2xl text-gray-600 p-8 w-full text-2xl tracking-normal rounded-md font-semibold inputField outline-none "
       />}
     </div>

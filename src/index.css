@@ -120,9 +120,9 @@ body {
 
 .sidebarA {
   transition-property: background;
-transition-duration: 0.3s;
-transition-timing-function: ease;
-transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 
 .sidebarA:hover {
