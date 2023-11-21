@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className="fixed w-full z-50 bg-white shadow-3xl dark:bg-gray-700 ">
-      <div className="flex items-center justify-between py-4 md:px-20 px-10">
+      <div className="flex items-center justify-between py-4 md:px-20 px-4">
         <div className="hover:text-purple-600 flex items-center text-gray-700 dark:text-white cursor-pointer transition-colors duration-300 ease-linear delay-0">
           <div className="picofme w-20 h-20 rounded-3xl overflow-hidden mr-6 bg-purple-700">
             <img
