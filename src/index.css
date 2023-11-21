@@ -54,6 +54,16 @@ body {
   }
 } */
 
+
+.btn {
+  transition: transform .3;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  transform : translateY(-3px);
+}
+
 .border {
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   background-color: rgb(255, 255, 255);
@@ -131,8 +141,21 @@ transition-delay: 0s;
 }
 
 .mouseContainer {
+
+  position: absolute;
   bottom: 3%;
+  left: 50%;
   transform: translateX(-50%);
+
+}
+
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
 }
 
 .mouse::before {
@@ -150,11 +173,21 @@ transition-delay: 0s;
   -webkit-animation: wheel 1.3s infinite;
 }
 
-.mouse {
-  border: 2px solid #333;
-  border-radius: 60px;
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
   
 }
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+
 
 .aboutDiv {
   background-color: rgb(250, 250, 250);
@@ -191,22 +224,6 @@ transition-delay: 0s;
       rgba(245, 245, 245, 0.8)
     ),
     url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
-}
-
-.aTagAbout {
-  background-color: rgb(120, 67, 233);
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-image: none;
-  background-size: auto;
-  background-origin: padding-box;
-  background-clip: border-box;
-
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-
-  transition: transform .3s;
 }
 
 

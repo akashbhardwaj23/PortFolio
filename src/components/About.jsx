@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from './Contact'
+import { Button } from '../components'
 import { Link } from 'react-router-dom'
 
 function About() {
@@ -27,7 +27,8 @@ function About() {
                         I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me. 
                         </p>
                     </div>
-                   <Link to={'/contact'}><a className='aTagAbout text-white py-6 px-20 text-2xl uppercase tracking-wide inline-block font-bold rounded-md no-underline'>Contact</a></Link>
+                   {/* <Link to={'/contact'}><a className='aTagAbout text-white py-6 px-20 text-2xl uppercase tracking-wide inline-block font-bold rounded-md no-underline'>Contact</a></Link> */}
+                   <Link to={'/contact'}><Button children= {'Contact'}/> </Link>
                 </div>
                 <div className='skillsBox'>
                     <h3 className='font-bold text-4xl mb-12'> 

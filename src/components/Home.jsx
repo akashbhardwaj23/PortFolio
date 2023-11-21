@@ -39,8 +39,8 @@ function Home() {
             </div>
         </div>
 
-        <div className='mouseContainer absolute left-1/2'>
-            <div className='mouse  w-6 h-10 relative overflow-hidden'></div>
+        <div className='mouseContainer'>
+            <div className='mouse'></div>
         </div>
     </div>
   )
