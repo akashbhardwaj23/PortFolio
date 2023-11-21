@@ -6,5 +6,6 @@ import About from "./About";
 import Component from "./Component";
 import Contact from "./Contact";
 import Home from "./Home";
+import Project from "./Project";
 4
-export {Header, Footer, Button, Input, About, Component, Contact, Home}
+export {Header, Footer, Button, Input, About, Component, Contact, Home, Project}

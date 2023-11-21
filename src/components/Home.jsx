@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
             </div>
 
             <div className='mt-20 text-center'>
-                <Button children={'Projects'}/>
+                <Link to={'/projects'}><Button children={'Projects'}/></Link>
             </div>
         </div>
 

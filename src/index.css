@@ -209,6 +209,19 @@ transition-delay: 0s;
   transition: transform .3s;
 }
 
+
+.spanProject::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #7843e9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
 .inputField {
   border: 1px solid #ebebeb;
   background-color: rgb(240, 240, 240);
@@ -228,4 +241,6 @@ button {
   transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-delay: 0s;
+
+  transform: scale(0.98);
 }
