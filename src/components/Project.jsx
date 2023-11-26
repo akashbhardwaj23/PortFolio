@@ -33,7 +33,7 @@ function Project() {
                Password Generator is a Simple password generating site . This site has many features some of the feature are that it will generate specified length password along with You can choose to include number and characters
               </p>
 
-              <Button children={"Password Changer"} />
+              <a href="https://github.com/akash23-ai/React/tree/main/05password" className="no-underline w-full text-left"><Button children={"Password Changer"} /></a>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ function Project() {
                 This is the final Project that i have created during my react learning. It use react-router-dom , redux and also uses appwrite(For all the backend requirement) .  
               </p>
 
-              <Button children={"Mega Site"} />
+              <a href="" className="no-underline w-full text-left"><Button children={"Mega Site"} /></a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ function Project() {
                It is the project that i have created during my free time for fun 
                </p>
 
-              <Button children={"Bg Color Changer"} />
+              <a href="https://github.com/akash23-ai/React/tree/main/04bgchanger" className="no-underline w-full text-left"><Button children={"Bg Color Changer"} /></a>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ function Project() {
                 This is not the project that i want to include because it is wrongly named it does switch your theme.
               </p>
 
-              <Button children={"Theme Switcher"} />
+              <a href="https://github.com/akash23-ai/React/tree/main/09themeSwitcher" className="no-underline w-full text-left"><Button children={"Theme Switcher"} /></a>
             </div>
           </div>
         </div>
