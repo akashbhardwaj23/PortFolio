@@ -29,11 +29,8 @@ function Project() {
               <h3 className="font-extrabold text-4xl mb-8">
                 Password Generator
               </h3>
-              <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12">
-                Dopefolio is a successful Open-Source project that I created
-                which have been featured on some of the biggest tech sites like
-                CSS-Tricks, Hostinger, etc & used by thousands of developers
-                globally
+              <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12 text-left">
+               Password Generator is a Simple password generating site . This site has many features some of the feature are that it will generate specified length password along with You can choose to include number and characters
               </p>
 
               <Button children={"Password Changer"} />
@@ -55,11 +52,8 @@ function Project() {
               <h3 className="font-extrabold text-4xl mb-8">
                 Mega Site
               </h3>
-              <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12">
-                Dopefolio is a successful Open-Source project that I created
-                which have been featured on some of the biggest tech sites like
-                CSS-Tricks, Hostinger, etc & used by thousands of developers
-                globally
+              <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12 text-left">
+                This is the final Project that i have created during my react learning. It use react-router-dom , redux and also uses appwrite(For all the backend requirement) .  
               </p>
 
               <Button children={"Mega Site"} />
@@ -81,12 +75,9 @@ function Project() {
               <h3 className="font-extrabold text-4xl mb-8">
                 Bg Color Changer
               </h3>
-              <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12">
-                Dopefolio is a successful Open-Source project that I created
-                which have been featured on some of the biggest tech sites like
-                CSS-Tricks, Hostinger, etc & used by thousands of developers
-                globally
-              </p>
+              <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12 text-left">
+               It is the project that i have created during my free time for fun 
+               </p>
 
               <Button children={"Bg Color Changer"} />
             </div>
@@ -107,11 +98,8 @@ function Project() {
               <h3 className="font-extrabold text-4xl mb-8">
                 Theme Switcher
               </h3>
-              <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12">
-                Dopefolio is a successful Open-Source project that I created
-                which have been featured on some of the biggest tech sites like
-                CSS-Tricks, Hostinger, etc & used by thousands of developers
-                globally
+              <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12 text-left">
+                This is not the project that i want to include because it is wrongly named it does switch your theme.
               </p>
 
               <Button children={"Theme Switcher"} />
