@@ -40,7 +40,9 @@ function Header() {
               </Link>
             </li>
             <li>
+              <Link to={"/project"}>
               <Component name={"Project"} />
+              </Link>
             </li>
             <li>
               <Link to={"/contact"}>
