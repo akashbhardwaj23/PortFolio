@@ -1,9 +1,11 @@
 import React from "react";
 import Button from "./Button";
+import ScrollToTop from "./ScrollToTop";
 
 function Project() {
   return (
     <div className="md:py-48 px-0 py-32">
+      <ScrollToTop />
       <div className="max-w-max-w-10xl m-auto w-11/12">
         <h2 className="md:mb-44 mb-32">
           <span className="spanProject block text-6xl uppercase tracking-wide text-center mb-14 relative text-gray-800">

@@ -1,10 +1,12 @@
 import React from 'react'
 import { Button } from '../components'
 import { Link } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 
 function About() {
   return (
     <div className='py-48 aboutDiv'>
+         <ScrollToTop />
         <div className='max-w-max-w-10xl m-auto w-11/12'>
             <h2 className='md:mb-36 mb-8'>
                 <span className='aboutsection block text-6xl uppercase tracking-wide text-center mb-14 relative text-black'>About</span>

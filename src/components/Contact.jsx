@@ -1,12 +1,14 @@
 import React from 'react'
 import Input from './Input'
 import Button from './Button'
+import ScrollToTop from './ScrollToTop'
 
 function Contact() {
 
     // top: calc(100% + 1.5rem); remember
   return (
     <div className='bg-black bg-repeat bg-scroll bg-origin-padding bg-clip-border bg-cover bg-center py-48 contactDiv'>
+        <ScrollToTop />
         <div className='max-w-max-w-10xl m-auto w-11/12'>
                 <h2 className='mb-36'>
                     <span className='after:content-none after:absolute after:h-1 after:w-12 after:left-1/2 after:-translate-x-1/2 after:rounded topSpan  after:bg-purple-600 text-gray-800 font-extrabold block text-7xl uppercase tracking-wide text-center mb-14 relative'>
