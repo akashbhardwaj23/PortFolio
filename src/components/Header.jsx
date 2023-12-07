@@ -1,11 +1,15 @@
 import React, { useContext, useState } from "react";
 import Component from "./Component";
 import picOfMe from "../assets/picofme.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import UserContext from "../context/UserContext";
 
 function Header() {
   const { state, setState } = useContext(UserContext);
+
+  const location = useLocation();
+
+  console.log(location)
 
   return (
     <header className="fixed w-full z-50 bg-white shadow-3xl dark:bg-gray-700 ">
@@ -55,6 +59,8 @@ function Header() {
             </li>
           </ul>
 
+
+          {location.pathname === "/" || "" ? 
           <div className="md:hidden flex mr-4">
             {state ? (
               <svg
@@ -89,8 +95,13 @@ function Header() {
                 />
               </svg>
             )}
-          </div>
+          </div> : null }
+
+
+
         </div>
+
+
       </div>
     </header>
   );

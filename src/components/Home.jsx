@@ -1,25 +1,17 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Button from './Button'
 import { Link } from 'react-router-dom'
-import UserContext from '../context/UserContext'
+import Slider from './Slider'
+
 
 function Home() {
 
-    const {state} = useContext(UserContext) 
+    
 
   return (
     <div className='homeDiv text-white bg-center h-screen min-h-min-h-2 max-h-max relative'>
- 
-        <div className={`${state? 'flex':'hidden'} sm:hidden w-1/2 h-1/2 bg-white overflow-hidden shadow-sm m-auto z-[-1]`}>
-             <div className='w-full h-full top-32 absolute text-center'>
-               <ul className='no-underline'>
-                <li className='text-4xl font-bold hover:text-purple-700 mb-3 my-auto cursor-pointer text-gray-600 listItem'>Home</li>
-                <li className='text-4xl font-bold hover:text-purple-700 mb-3 my-auto cursor-pointer text-gray-600 listItem'>About</li>
-                <li className='text-4xl font-bold hover:text-purple-700 mb-3 my-auto cursor-pointer text-gray-600 listItem'>Project</li>
-                <li className='text-4xl font-bold hover:text-purple-700 mb-3 my-auto cursor-pointer text-gray-600 listItem'><Link to={"/contact"}>Contact</Link></li>
-               </ul>
-             </div>
-        </div>
+
+        <Slider />
         <div className='homeDiv2 absolute top-1/2 left-1/2 max-w-4.5xl w-11/12'>
             <h1 className='heading text-8xl uppercase tracking-wider text-center text-gray-900 font-extrabold'>Hey, Akash This Side</h1>
             <div className='mt-12 mx-auto mb-0 max-w-7xl'>
