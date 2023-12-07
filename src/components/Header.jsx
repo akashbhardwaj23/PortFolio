@@ -61,7 +61,7 @@ function Header() {
 
 
           {location.pathname === "/" || "" ? 
-          <div className="md:hidden flex mr-4">
+             <div className="md:hidden flex mr-4">
             {state ? (
               <svg
               onClick={() => setState((prev) => (!prev))}
@@ -70,7 +70,7 @@ function Header() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-10 h-10"
+                className="w-12 h-12"
               >
                 <path
                   stroke-linecap="round"
@@ -86,7 +86,7 @@ function Header() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-10 h-10"
+                className="w-12 h-12"
               >
                 <path
                   stroke-linecap="round"
