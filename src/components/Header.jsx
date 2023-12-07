@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Component from "./Component";
 import picOfMe from "../assets/picofme.png";
 import { Link, useLocation } from "react-router-dom";
