@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from './Button'
 import { Link } from 'react-router-dom'
 import Slider from './Slider'
+import UserContext from '../context/UserContext'
 
 
 function Home() {
-
     
-
   return (
     <div className='homeDiv text-white bg-center h-screen min-h-min-h-2 max-h-max relative'>
 
