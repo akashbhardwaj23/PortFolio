@@ -12,7 +12,7 @@ function Slider() {
     <ul
       className={`${
         state ? "block" : "hidden"
-      }  w-[42%] relative no-underline float-right z-10  bg-blue-500  md:hidden top-[6.2rem] rounded-xl shadow-2xl`}
+      } w-[65%] md:w-[70%] relative no-underline float-right z-10  bg-blue-500  md:hidden top-[6.2rem] rounded-xl shadow-2xl`}
     >
       <li className="p-[5rem] border-b-2 border-b-zinc-800 uppercase font-semibold text-4xl hover:text-white text-gray-900">
         <Link to={""} onClick={handleClick}>
