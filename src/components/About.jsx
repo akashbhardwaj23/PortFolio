@@ -2,16 +2,19 @@ import React from 'react'
 import { Button } from '../components'
 import { Link } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
+import Slider from './Slider'
 
 function About() {
   return (
-    <div className='py-48 aboutDiv'>
+    <div className='py-48 relative aboutDiv'>
+        {/* <Slider /> */}
          <ScrollToTop />
         <div className='max-w-max-w-10xl m-auto w-11/12'>
+       
             <h2 className='md:mb-36 mb-8'>
                 <span className='aboutsection block text-6xl uppercase tracking-wide text-center mb-14 relative text-black'>About</span>
                 <span className='block sm:text-center text-gray-500 sm:text-4xl font-medium sm:max-w-7xl sm:m-auto sm:leading-10 text-3xl'>
-                    Here You will find More Information about me. My current Skill mostly in terms of tech
+                    Here You will find More Information about me. My current Skill mostly.
                 </span>
             </h2>
             <div className='grid md:grid-cols-2 md:gap-40 grid-cols-1 gap-32'>
