@@ -1,26 +1,35 @@
-import React, {useContext} from 'react'
-import { Link } from 'react-router-dom'
-import UserContext from '../context/UserContext'
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import UserContext from "../context/UserContext";
 
 function Slider() {
+  const { state, setState } = useContext(UserContext);
 
-    const {state, setState} = useContext(UserContext);
-
-    const handleClick = () => {
-        setState(false)
-    }
+  const handleClick = () => {
+    setState(false);
+  };
   return (
-    <div className={`${state? 'block':'hidden'} relative sm:hidden w-full min-h-full bg-zinc-100 overflow-hidden shadow-sm rounded-md z-[10]`}>
-             <div className='relative w-full h-full top-28  text-center z-[1]'>
-               <ul className='no-underline'>
-                <li className='text-4xl font-bold hover:text-purple-700 px-12 py-10 uppercase text-right cursor-pointer text-gray-700 listItem'><Link to={""}onClick={handleClick}>Home</Link></li>
-                <li className='text-4xl font-bold hover:text-purple-700 px-12 py-10 uppercase text-right cursor-pointer text-gray-700 listItem'><Link to={"/about"}>About</Link></li>
-                <li className='text-4xl font-bold hover:text-purple-700 px-12 py-10 uppercase text-right  cursor-pointer text-gray-700 listItem'><Link to={"/projects"}>Project</Link></li>
-                <li className='text-4xl font-bold hover:text-purple-700 px-12 py-10 uppercase text-right cursor-pointer text-gray-700 listItem'><Link to={"/contact"}>Contact</Link></li>
-               </ul>
-             </div>
-        </div>
-  )
+    <ul
+      className={`${
+        state ? "block" : "hidden"
+      }  w-[42%] relative no-underline float-right z-10  bg-blue-500  md:hidden top-[6.2rem] rounded-xl shadow-2xl`}
+    >
+      <li className="p-[5rem] border-b-2 border-b-zinc-800 uppercase font-semibold text-4xl hover:text-white text-gray-900">
+        <Link to={""} onClick={handleClick}>
+          Home
+        </Link>
+      </li>
+      <li className="p-[5rem] border-b-2 border-b-zinc-800 uppercase font-semibold text-4xl hover:text-white text-gray-900">
+        <Link to={"/about"}>About</Link>
+      </li>
+      <li className="p-[5rem] border-b-2 border-b-zinc-800 uppercase font-semibold text-4xl hover:text-white text-gray-900">
+        <Link to={"/projects"}>Project</Link>
+      </li>
+      <li className="p-[5rem]  uppercase font-semibold text-4xl hover:text-white text-gray-900">
+        <Link to={"/contact"}>Contact</Link>
+      </li>
+    </ul>
+  );
 }
 
-export default Slider
+export default Slider;
