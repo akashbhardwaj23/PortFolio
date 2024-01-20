@@ -5,11 +5,15 @@ import { Link, useLocation } from "react-router-dom";
 import UserContext from "../context/UserContext";
 
 function Header() {
-  const { state, setState } = useContext(UserContext);
+  const { state, setState, themeMode, setThemeMode } = useContext(UserContext);
 
   const location = useLocation();
 
-  console.log(location)
+  const handleTheme = () => {
+    themeMode === "light" ? setThemeMode("dark") : setThemeMode("light");
+  };
+
+  console.log(location);
 
   return (
     <header className="fixed w-full z-50 bg-white shadow-3xl dark:bg-gray-700 ">
@@ -29,10 +33,36 @@ function Header() {
           </Link>
         </div>
 
+        <div className="md:hidden flex">
+          {themeMode === "light" ? (
+            <svg
+              className="w-10 h-10 text-gray-800 dark:text-white cursor-pointer"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 15 20"
+              onClick={() => setThemeMode("dark")}
+            >
+              <path d="M9.092 18h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Zm-2-18a7.009 7.009 0 0 0-7 7 7.8 7.8 0 0 0 2.219 5.123c.956 1.195 1.781 2.228 1.781 3.877a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1c0-1.7.822-2.7 1.774-3.868A7.63 7.63 0 0 0 14.092 7a7.009 7.009 0 0 0-7-7Zm0 5a2 2 0 0 0-2 2 1 1 0 0 1-2 0 4 4 0 0 1 4-4 1 1 0 0 1 0 2Z" />
+            </svg>
+          ) : (
+            <svg
+              class="w-10 h-10 text-gray-800 dark:text-white cursor-pointer"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 18 20"
+              onClick={() => setThemeMode("light")}
+            >
+              <path d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z" />
+            </svg>
+          )}
+        </div>
+
         <div className="main-content">
-          <ul className="md:flex hidden ">
+          <ul className="md:flex hidden items-center ">
             <li className="list-none ">
-              <Link to={""} spy={true} smooth={true} offset={50} duration={500}>
+              <Link>
                 <Component name={"Home"} />
               </Link>
             </li>
@@ -57,14 +87,37 @@ function Header() {
                 <Component name={"Contact"} />
               </Link>
             </li>
+            <li className="p-6 cursor-pointer">
+              {themeMode === "light" ? (
+                <svg
+                  className="w-10 h-10 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 15 20"
+                  onClick={() => setThemeMode("dark")}
+                >
+                  <path d="M9.092 18h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Zm-2-18a7.009 7.009 0 0 0-7 7 7.8 7.8 0 0 0 2.219 5.123c.956 1.195 1.781 2.228 1.781 3.877a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1c0-1.7.822-2.7 1.774-3.868A7.63 7.63 0 0 0 14.092 7a7.009 7.009 0 0 0-7-7Zm0 5a2 2 0 0 0-2 2 1 1 0 0 1-2 0 4 4 0 0 1 4-4 1 1 0 0 1 0 2Z" />
+                </svg>
+              ) : (
+                <svg
+                  className="w-10 h-10 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 18 20"
+                  onClick={() => setThemeMode("light")}
+                >
+                  <path d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z" />
+                </svg>
+              )}
+            </li>
           </ul>
 
-
-         
-             <div className="md:hidden flex mr-4">
+          <div className="md:hidden flex mr-4">
             {state ? (
               <svg
-              onClick={() => setState((prev) => (!prev))}
+                onClick={() => setState((prev) => !prev)}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -95,13 +148,8 @@ function Header() {
                 />
               </svg>
             )}
-          </div> 
-
-
-
+          </div>
         </div>
-
-
       </div>
     </header>
   );
