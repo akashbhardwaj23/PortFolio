@@ -5,7 +5,7 @@ function Input({name, type, placeholder,value}) {
     <div className="mb-16">
       <label
         htmlFor={name}
-        className="text-gray-600 text-2xl tracking-wide font-bold mb-4 block text-left"
+        className="text-gray-600 text-2xl tracking-wide font-bold mb-4 block text-left dark:text-white"
       >
         {name}
       </label>

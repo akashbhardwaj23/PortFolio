@@ -1,10 +1,12 @@
 import React from "react";
 import Button from "./Button";
 import ScrollToTop from "./ScrollToTop";
+import Slider from "./Slider";
 
 function Project() {
   return (
     <div className="md:py-48 px-0 py-32">
+      <Slider />
       <ScrollToTop />
       <div className="max-w-max-w-10xl m-auto w-11/12">
         <h2 className="md:mb-44 mb-32">
@@ -51,14 +53,14 @@ function Project() {
             </div>
 
             <div className="py-8 px-0 flex justify-center flex-col md:items-start items-center">
-              <h3 className="font-extrabold text-4xl mb-8">
-                Mega Site
+              <h3 className="font-extrabold text-5xl mb-8">
+                Social
               </h3>
               <p className="text-3xl text-gray-500 max-w-4xl leading-9 mb-12 text-left">
-                This is the final Project that i have created during my react learning. It use react-router-dom , redux and also uses appwrite(For all the backend requirement) .  
+                This is a social media site that i have created during my free time for fun. It has many features like you can create a post, like a post, comment on a post and many more.It also include Authentication using JWt and bcrypt.  
               </p>
 
-              <a href="" className="no-underline w-full md:text-left"><Button children={"Mega Site"} /></a>
+              <a href="https://github.com/akash23-ai/Social" className="no-underline w-full md:text-left"><Button children={"Social"} /></a>
             </div>
           </div>
         </div>

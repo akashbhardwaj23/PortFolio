@@ -32,10 +32,10 @@ function Home() {
         </div>
       </div>
 
-      <div className="sidebar absolute top-1/2 bg-white dark:bg-gray-700 p-10">
+      <div className="sidebar  top-1/2 bg-white dark:bg-gray-700 p-10 fixed">
         <div className="w-20">
           <a
-            href=""
+            href="https://www.linkedin.com/in/akash-bhardwaj-b70a38161/"
             target="_blank"
             className={`${themeMode === "light" ? "sidebarA":"darkSidebarA"} w-full block p-4 rounded-md no-underline`}
           >
@@ -65,7 +65,7 @@ function Home() {
         </div>
         <div className="w-20">
           <a
-            href=""
+            href="https://twitter.com/AkashBh2024?t=ZIVvM108UpB5PssuhFIT6g&s=09"
             target="_blank"
             className={`${themeMode === "light" ? "sidebarA":"darkSidebarA"} w-full block p-4 rounded-md no-underline`}
           >

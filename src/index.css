@@ -236,13 +236,17 @@ body {
   background-clip: border-box;
 }
 
+.darkAboutDiv {
+  background-color: #313233;
+}
+
 .aboutsection::after {
   content: "";
   position: absolute;
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #7843e9;
+  background: #2563EB;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -260,6 +264,13 @@ body {
     ),
     url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
 }
+
+/* .darkContextDiv {
+  background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 
 .spanProject::after {

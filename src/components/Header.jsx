@@ -18,7 +18,7 @@ function Header() {
   return (
     <header className="fixed w-full z-50 bg-white shadow-3xl dark:bg-gray-700 ">
       <div className="flex items-center justify-between py-4 md:px-20 px-4">
-        <div className="hover:text-purple-600 flex items-center text-gray-700 dark:text-white cursor-pointer transition-colors duration-300 ease-linear delay-0">
+        <div className="hover:text-indigo-600 dark:hover:text-indigo-500 flex items-center text-gray-700 dark:text-white cursor-pointer transition-colors duration-300 ease-linear delay-0">
           <div className="picofme w-20 h-20 rounded-3xl overflow-hidden mr-6 bg-purple-700">
             <img
               src={picOfMe}
@@ -26,7 +26,7 @@ function Header() {
               className="w-full h-full object-cover object-center block"
             />
           </div>
-          <Link to={""} spy={true} smooth={true} offset={50} duration={500}>
+          <Link to={""} >
             <span className="text-2xl uppercase font-bold tracking-wide">
               Akash Kumar Bhardwaj
             </span>
@@ -47,7 +47,7 @@ function Header() {
             </svg>
           ) : (
             <svg
-              class="w-10 h-10 text-gray-800 dark:text-white cursor-pointer"
+              className="w-10 h-10 text-gray-800 dark:text-white cursor-pointer"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -69,10 +69,7 @@ function Header() {
             <li>
               <Link
                 to="/about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                
               >
                 <Component name={"About"} />
               </Link>
@@ -114,7 +111,7 @@ function Header() {
             </li>
           </ul>
 
-          <div className="md:hidden flex mr-4">
+          <div className="md:hidden flex mr-4 ">
             {state ? (
               <svg
                 onClick={() => setState((prev) => !prev)}
