@@ -11,7 +11,7 @@ function Home() {
     <div
       className={`${
         themeMode === "light" ? "homeDiv" : "darkHomeDiv"
-      } text-white bg-center h-screen min-h-min-h-2 max-h-max relative`}
+      } text-white bg-center h-screen min-h-min-h-2 max-h-max relative dark:border-b-[1px] dark:border-white`}
     >
       <Slider />
       <div className="homeDiv2 absolute top-1/2 left-1/2 max-w-4.5xl w-11/12">

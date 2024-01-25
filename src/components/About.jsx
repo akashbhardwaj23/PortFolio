@@ -11,7 +11,7 @@ function About() {
     const { skills } = useContext(UserContext);
 
   return (
-    <div className={`py-48 relative ${themeMode === "light" ? "aboutDiv":"darkAboutDiv"}`}>
+    <div className={`py-48 relative ${themeMode === "light" ? "aboutDiv":"darkAboutDiv"} dark:border-b-2 dark:border-white`}>
         <Slider />
          <ScrollToTop />
         <div className='max-w-max-w-10xl m-auto w-11/12'>
@@ -46,7 +46,7 @@ function About() {
                     </h3>
                     <div className='skills flex flex-wrap'>
                         {skills.map((skill, index) => (
-                            <div className={`skill py-4 px-8 mb-6 mr-6 text-2xl ${theme[themeKeys[index]]} rounded-md font-semibold text-gray-700 hover:cursor-pointer`}>{skill}</div>
+                            <div className={`skill py-4 px-8 mb-6 mr-6 text-2xl ${theme[themeKeys[index]]} rounded-md font-semibold text-[#FEE2E2] hover:cursor-pointer`}>{skill}</div>
                         ))}
                     </div>
                 </div>
