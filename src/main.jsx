@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import { About, Contact, Project } from "./components";
 import HomePage from "./HomePage.jsx";
 import "./index.css";
+import NotFound from "./components/NotFound.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import UserContextProvider from "./context/UserContextProvider.jsx";
 
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
+        errorElement: <div>Not Found</div>,
         element: <About />,
       },
       {
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/*",
+        element: <NotFound />
+      }
     ],
   },
 ]);
