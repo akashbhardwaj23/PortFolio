@@ -2,9 +2,6 @@
     "rewrites": [{
         "source": "/(.*)", 
         "destination": "/"
-    },
-{
-    "source" : "/projects",
-    "destination" : "https://github.com/akash23-ai"
-}]
+    }
+]
 }
