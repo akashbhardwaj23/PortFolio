@@ -1,9 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 function SideBar() {
   let pathname = useLocation();
-  console.log(typeof pathname);
 
   React.useEffect(() => {
     // Google Analytics

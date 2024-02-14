@@ -7,13 +7,6 @@ import UserContext from "../context/UserContext";
 function Header() {
   const { state, setState, themeMode, setThemeMode } = useContext(UserContext);
 
-  const location = useLocation();
-
-  const handleTheme = () => {
-    themeMode === "light" ? setThemeMode("dark") : setThemeMode("light");
-  };
-
-  console.log(location);
 
   return (
     <header className="fixed w-full z-50 bg-white shadow-3xl dark:bg-gray-700 ">

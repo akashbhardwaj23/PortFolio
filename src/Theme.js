@@ -16,7 +16,3 @@ export const theme = {
 }
 
 export const themeKeys = Object.keys(theme);
-
-console.log(themeKeys.length)
-
-console.log(Math.floor(Math.random()*10) + 5)
