@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import UserContext from "../context/UserContext";
+import UserContext from "../../context/UserContext";
 
 function Slider() {
   const { state, setState } = useContext(UserContext);
@@ -12,7 +12,7 @@ function Slider() {
     <ul
       className={`${
         state ? "block" : "hidden"
-      } w-[65%] md:w-[70%] fixed no-underline right-0 z-10  bg-blue-500  md:hidden top-[6.2rem] rounded-xl shadow-2xl `}
+      } w-[60%] md:w-[65%] fixed no-underline right-0 z-10  bg-blue-500  md:hidden top-[6.2rem] rounded-xl shadow-2xl `}
     >
       <li className="p-[5rem] border-b-2 border-b-zinc-800 uppercase font-semibold text-4xl hover:text-white text-gray-900 dark:text-white dark:hover:text-gray-900">
         <Link to={"/"} onClick={handleClick}>
@@ -20,13 +20,13 @@ function Slider() {
         </Link>
       </li>
       <li className="p-[5rem] border-b-2 border-b-zinc-800 uppercase font-semibold text-4xl hover:text-white text-gray-900 dark:text-white dark:hover:text-gray-900">
-        <Link to={"/about"}>About</Link>
+        <Link to={"/about"} onClick={handleClick}>About</Link>
       </li>
       <li className="p-[5rem] border-b-2 border-b-zinc-800 uppercase font-semibold text-4xl hover:text-white text-gray-900 dark:text-white dark:hover:text-gray-900">
-        <Link to={"/projects"}>Project</Link>
+        <Link to={"/projects"} onClick={handleClick}>Project</Link>
       </li>
       <li className="p-[5rem]  uppercase font-semibold text-4xl hover:text-white text-gray-900 dark:text-white dark:hover:text-gray-900">
-        <Link to={"/contact"}>Contact</Link>
+        <Link to={"/contact"} onClick={handleClick}>Contact</Link>
       </li>
     </ul>
   );

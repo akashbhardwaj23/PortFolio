@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import Component from "./Component";
+import Component from "./ui/Component";
 import picOfMe from "../assets/picofme.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import UserContext from "../context/UserContext";
 
 function Header() {

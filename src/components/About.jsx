@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { Button } from '../components'
 import { Link } from 'react-router-dom'
-import ScrollToTop from './ScrollToTop'
-import Slider from './Slider'
+import ScrollToTop from './ui/ScrollToTop'
+import Slider from './ui/Slider'
 import UserContext from '../context/UserContext'
 import {theme, themeKeys} from "../Theme"
 
@@ -17,7 +17,7 @@ function About() {
         <div className='max-w-max-w-10xl m-auto w-11/12'>
        
             <h2 className='md:mb-36 mb-8'>
-                <span className='aboutsection block text-6xl font-semibold uppercase tracking-wide text-center mb-14 relative text-black dark:text-white'>About</span>
+                <span className='aboutsection block text-6xl font-bold uppercase tracking-wide text-center mb-14 relative text-black dark:text-white'>About</span>
                 <span className='block sm:text-center text-gray-500 sm:text-4xl font-medium sm:max-w-7xl sm:m-auto sm:leading-10 text-3xl dark:text-white'>
                     Here You will find More Information about me. My current Skill mostly.
                 </span>
@@ -46,7 +46,10 @@ function About() {
                     </h3>
                     <div className='skills flex flex-wrap'>
                         {skills.map((skill, index) => (
-                            <div className={`skill py-4 px-8 mb-6 mr-6 text-2xl ${theme[themeKeys[index]]} rounded-md font-semibold text-[#FEE2E2] hover:cursor-pointer`}>{skill}</div>
+                            <div className={`skill py-6 px-8 mb-6 mr-6 text-3xl flex justify-center items-center ${theme[themeKeys[index]]} rounded-md font-semibold dark:text-[#FEE2E2] hover:cursor-pointer`}>
+                                <img src={skill.img} alt="img" className='mr-2 h-8 w-8' />
+                                {skill.name}
+                            </div>
                         ))}
                     </div>
                 </div>

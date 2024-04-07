@@ -1,8 +1,7 @@
 import React from "react";
-import Button from "./Button";
-import ScrollToTop from "./ScrollToTop";
-import Slider from "./Slider";
-import { useLocation, useHref } from "react-router-dom";
+import Button from "./ui/Button";
+import ScrollToTop from "./ui/ScrollToTop";
+import Slider from "./ui/Slider";
 
 // function Project() {
 
@@ -133,8 +132,9 @@ import { useLocation, useHref } from "react-router-dom";
 function Project(){
   return (
     <div className="md:py-48 px-0 py-32 dark:bg-black h-screen flex flex-col items-center justify-center dark:border-b-2 dark:border-white">
+      <Slider />
       <ScrollToTop />
-     <div className="text-7xl font-bold mb-16"> Click on This Button To Check My Projects</div>
+     <div className="text-7xl font-bold mb-16 text-center"> Click on This Button To Check My Projects</div>
       {/* <button className="bg-green-600 py-2 px-4 text-5xl rounded-md text-white font-semibold" onClick={() => window.location.href="https://github.com/akashbhardwaj23"}>GitHub</button> */}
       <Button children={"GitHub"} onClick = {() => window.location.href="https://github.com/akashbhardwaj23"}/>
     </div>

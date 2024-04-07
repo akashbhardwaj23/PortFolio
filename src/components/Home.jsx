@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import Button from "./Button";
+import Button from "./ui/Button";
 import { Link } from "react-router-dom";
-import Slider from "./Slider";
+import Slider from "./ui/Slider";
 import UserContext from "../context/UserContext";
 
 function Home() {

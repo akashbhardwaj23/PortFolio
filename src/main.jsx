@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { About, Contact, Project } from "./components";
 import HomePage from "./HomePage.jsx";
 import "./index.css";
-import NotFound from "./components/NotFound.jsx";
+import NotFound from "./components/ui/NotFound.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import UserContextProvider from "./context/UserContextProvider.jsx";
 

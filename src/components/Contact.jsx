@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import Input from './Input'
-import Button from './Button'
-import ScrollToTop from './ScrollToTop'
-import Slider from './Slider'
+import Input from './ui/Input'
+import Button from './ui/Button'
+import ScrollToTop from './ui/ScrollToTop'
+import Slider from './ui/Slider'
 import UserContext from '../context/UserContext'
 
 function Contact() {
