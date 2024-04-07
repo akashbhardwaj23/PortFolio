@@ -25,7 +25,7 @@ function Footer() {
                   className="mr-4 w-10"
                 />
               </a>
-              <a href="https://github.com/akash23-ai" className="no-underline hover:bg-indigo-500 rounded-lg">
+              <a href="https://github.com/akashbhardwaj23" className="no-underline hover:bg-indigo-500 rounded-lg">
                 <img
                   src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
                   alt=""

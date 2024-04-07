@@ -1,9 +1,8 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 function Github() {
     const navigate = useNavigate()
-  navigate("https://github.com/akash23-ai")
+  navigate("https://github.com/akashbhardwaj23")
 }
 
 export default Github

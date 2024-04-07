@@ -119,7 +119,7 @@ function Home() {
         </div>
         <div className="w-20">
           <a
-            href="https://github.com/akash23-ai"
+            href="https://github.com/akashbhardwaj23"
             target="_blank"
             className={`${themeMode === "light" ? "sidebarA":"darkSidebarA"} w-full block p-4 rounded-md no-underline`}
           >

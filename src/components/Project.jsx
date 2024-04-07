@@ -11,7 +11,7 @@ import { useLocation, useHref } from "react-router-dom";
 
 
 //   // if(location.pathname === "/projects") {
-//   //   window.location.href = "https://github.com/akash23-ai"
+//   //   window.location.href = "https://github.com/akashbhardwaj23"
 //   //   console.log(window.location)
 //   // }
 //   return (
@@ -47,7 +47,7 @@ import { useLocation, useHref } from "react-router-dom";
 //                Password Generator is a Simple password generating site . This site has many features some of the feature are that it will generate specified length password along with You can choose to include number and characters
 //               </p>
 
-//               <a href="https://github.com/akash23-ai/React/tree/main/05password" className="no-underline w-full md:text-left"><Button children={"Password Changer"} /></a>
+//               <a href="https://github.com/akashbhardwaj23/React/tree/main/05password" className="no-underline w-full md:text-left"><Button children={"Password Changer"} /></a>
 //             </div>
 //           </div>
 //         </div>
@@ -70,7 +70,7 @@ import { useLocation, useHref } from "react-router-dom";
 //                 This is a social media site that i have created during my free time for fun. It has many features like you can create a post, like a post, comment on a post and many more.It also include Authentication using JWt and bcrypt.  
 //               </p>
 
-//               <a href="https://github.com/akash23-ai/Social" className="no-underline w-full md:text-left"><Button children={"Social"} /></a>
+//               <a href="https://github.com/akashbhardwaj23/Social" className="no-underline w-full md:text-left"><Button children={"Social"} /></a>
 //             </div>
 //           </div>
 //         </div>
@@ -93,7 +93,7 @@ import { useLocation, useHref } from "react-router-dom";
 //                It is the project that i have created during my free time for fun 
 //                </p>
 
-//               <a href="https://github.com/akash23-ai/React/tree/main/04bgchanger" className="no-underline w-full md:text-left"><Button children={"Bg Color Changer"} /></a>
+//               <a href="https://github.com/akashbhardwaj23/React/tree/main/04bgchanger" className="no-underline w-full md:text-left"><Button children={"Bg Color Changer"} /></a>
 //             </div>
 //           </div>
 //         </div>
@@ -116,7 +116,7 @@ import { useLocation, useHref } from "react-router-dom";
 //                 This is not the project that i want to include because it is wrongly named it does switch your theme.
 //               </p>
 
-//               <a href="https://github.com/akash23-ai/React/tree/main/09themeSwitcher" className="no-underline w-full md:text-left"><Button children={"Theme Switcher"} /></a>
+//               <a href="https://github.com/akashbhardwaj23/React/tree/main/09themeSwitcher" className="no-underline w-full md:text-left"><Button children={"Theme Switcher"} /></a>
 //             </div>
 //           </div>
 //         </div>
@@ -135,8 +135,8 @@ function Project(){
     <div className="md:py-48 px-0 py-32 dark:bg-black h-screen flex flex-col items-center justify-center dark:border-b-2 dark:border-white">
       <ScrollToTop />
      <div className="text-7xl font-bold mb-16"> Click on This Button To Check My Projects</div>
-      {/* <button className="bg-green-600 py-2 px-4 text-5xl rounded-md text-white font-semibold" onClick={() => window.location.href="https://github.com/akash23-ai"}>GitHub</button> */}
-      <Button children={"GitHub"} onClick = {() => window.location.href="https://github.com/akash23-ai"}/>
+      {/* <button className="bg-green-600 py-2 px-4 text-5xl rounded-md text-white font-semibold" onClick={() => window.location.href="https://github.com/akashbhardwaj23"}>GitHub</button> */}
+      <Button children={"GitHub"} onClick = {() => window.location.href="https://github.com/akashbhardwaj23"}/>
     </div>
   )
 }
