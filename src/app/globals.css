@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+/*
+  ---break---
+*/
+@custom-variant dark (&:is(.dark *));
+
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+
+/* First i am doing regular css for responsiveness than i will do this in tailwind */
+
+
+:root {
+  /* Light Theme Colors */
+  --background: 240 100% 98%; /* Light background */
+  --foreground: 222 84% 4.9%; /* Light text color */
+
+  --card: 240 100% 98%;
+  --card-foreground: 222 84% 4.9%;
+
+  --primary: 240 60% 15%; /* Darker primary color */
+  --primary-foreground: 210 40% 95%; /* Light text on primary */
+  
+  --border: 214.3 31.8% 91.4%; /* Light border */
+  --input: 214.3 31.8% 91.4%; /* Light input */
+  /* ...existing code... */
+  --text-color: #1e1e1e;
+  /* ...existing code... */
+}
+
+.dark {
+  /* Dark Theme Colors */
+  --background: 0 0% 10%; /* Dark background */
+  --foreground: 210 40% 90%; /* Light text color */
+
+  --card: 0 0% 20%; /* Darker card background */
+  --card-foreground: 210 40% 90%; /* Light text color for card */
+
+  --primary: 0 0% 20%; /* Darker primary color */
+  --primary-foreground: 210 40% 90%; /* Light text on primary */
+  
+  --border: 0 0% 30%; /* Dark border */
+  --input: 0 0% 20%; /* Darker input background */
+}
+
+* {
+  @apply border-[#e5e7eb] dark:border-[#374151];
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* ...existing code... */
+    --text-color: #ffffff;
+    /* ...existing code... */
+  }
+}
+
+@theme {
+  --font-poppins: Poppins, sans-serif;
+  --font-convergence: Convergence, sans-serif;
+  --color-border: var(--border);
+  --color-input: var(--input);  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: {
+    DEFAULT: var(--primary);
+    foreground: var(--primary-foreground);
+  }
+  --color-card: {
+    DEFAULT: var(--card);
+    foreground: var(--card-foreground);
+  }
+  --blur-sm2 : 1.5px;
+  --shadow-sidebar :0 7px 29px 0 rgba(100,100,111,.2) 
+}
+
+
+
+body {
+  @apply bg-background text-foreground font-poppins; /* These will use your defined variables */
+}
+
+::selection {
+  color:#0891B2
+}
+
+@media only screen and (max-width : 75em) {
+  html {
+    font-size: 59%;
+  }
+}
+@media only screen and (max-width:56.25em) {
+  html {
+    font-size:56%
+  }
+}
+
+@media only screen and (min-width:112.5em) {
+  html {
+    font-size:65%
+  }
+}
+/* 
+body {
+  line-height: 1.5;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: sans-serif;
+} */
+
+/* @media(prefers-color-scheme: dark) {
+  .sidebar.adaptive {
+    box-shadow: rgba(245, 245, 245, 0.8) 0 7px 29px 0;
+  }
+
+  .sidebarA:hover.adaptive {
+    background: purple;
+  }
+} */
+
+.btn {
+  transition: transform .3;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  transform : translateY(-3px);
+}
+/* 
+.border {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  background-color: rgb(255, 255, 255);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+} */
+/* 
+@media only screen and (max-width:37.5em) {
+  .tripleDot {
+    display: none;
+  }
+}
+
+.tripleDot {
+  display: flex;
+} */
+
+.homeDiv {
+  background-image: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1548685913-fe6678babe8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+}
+
+.darkHomeDiv {
+  /* background-image: url("https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D"); */
+  background-color: black;
+}
+
+/* .homeDiv2 {
+  transform: translate(-50%,-50%);
+} */
+
+@media only screen and (max-width:37.5em) {
+  .heading {
+    font-size:4.5rem
+  }
+}
+
+@media only screen and (max-width:37.5em){
+  .primaryText {
+    font-size:2rem;
+}
+}
+
+/* .sidebar {
+  transform: translateY(-50%);
+  background: #fff;
+  box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+} */
+
+@media only screen and (max-width: 56.25em) {
+
+  .sidebar {
+    display: none;
+  }
+}
+
+.listItem {
+  border-bottom: 1px solid #555050;
+}
+
+.sidebarlink {
+  transition-property: background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+}
+
+/* .sidebarA:hover {
+  background:rgba(81, 0, 255, 0.7)
+} */
+
+/* .darkSidebarA {
+  transition-property: background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+} */
+
+/* .darkSidebarA:hover {
+  background: rgb(191, 190, 190);
+} */
+
+@media only screen and (max-width : 56.25em){
+  .picofme {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1.2rem;
+
+  }
+}
+
+.mouseContainer {
+
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mouse::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+  -webkit-animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+
+.aboutDiv {
+  background-color: rgb(250, 250, 250);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+.darkAboutDiv {
+  background-color: black;
+}
+
+.aboutsection::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #2563EB;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.skill {
+  font-family: 'Roboto', sans-serif;;
+}
+
+.contactDiv {
+  background-image: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
+}
+
+/* .darkContextDiv {
+  background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.spanProject::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #2563EB;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.inputField {
+  border: 1px solid #ebebeb;
+  background-color: rgb(240, 240, 240);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+button {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+  transform: scale(0.98);
+}
+
+/*
+  ---break---
+*/
+
+:root {
+  --radius: 0.625rem;
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+}
+
+/*
+  ---break---
+*/
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+/*
+  ---break---
+*/
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/*
+  ---break---
+*/
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
