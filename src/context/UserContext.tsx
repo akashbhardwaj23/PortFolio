@@ -22,7 +22,7 @@ export const UserContextProvider = ({
   children: React.ReactNode;
 }) => {
   const [state, setState] = useState(false);
-  const [themeMode, setThemeMode] = useState<ThemeModeType>("light");
+  const [themeMode, setThemeMode] = useState<ThemeModeType>("system");
   const [skills, setskills] = useState([
     "HTML",
     "CSS",
