@@ -7,6 +7,7 @@ import Button from "./Button";
 import { motion } from "framer-motion";
 import { useUserContext } from "@/context/UserContext";
 import { AnimatedCircularProgressBar } from "./ui/animatedprogress";
+import WorkInProgress from "./workinprogess";
 
 export default function HomePage() {
   const { themeMode } = useUserContext();
@@ -38,15 +39,15 @@ export default function HomePage() {
 
   return (
     <div
-      className={`text-white h-screen relative dark:border-b-[1px] dark:border-white`}
+      className={`text-white h-screen relative dark:border-b-[1px] dark:border-white `}
     >
-      <div
+      {/* <div
         className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
         style={{
           background:
             "radial-gradient(600px at 691px 2922.4px, rgba(29, 78, 216, 0.15), transparent 80%",
         }}
-      ></div>
+      ></div> */}
 
       {/* <div className="absolute top-30 left-30">
         <h1 className="heading text-3xl uppercase tracking-wider text-center text-primary font-poppins font-extrabold dark:text-white">
@@ -69,24 +70,10 @@ export default function HomePage() {
       </div>
       </div>
       */}
-
-
-        <div className="absolute top-[30%] left-[40%]">
-          <div className="heading flex flex-col justify-center items-center text-3xl uppercase gap-4 tracking-wider text-center text-primary font-poppins font-extrabold dark:text-white">
-          Work In Progress
-          <AnimatedCircularProgressBar 
-            max={100}
-            min={0}
-            value={progessValue}
-            gaugePrimaryColor="rgb(79 70 229)"
-            gaugeSecondaryColor="rgba(0, 0, 0, 0.1)"
-            className="text-black"
-          />
-          </div>
-        </div>
       
+      <WorkInProgress />
 
-      <div className="translate-y-[-50%] bg-white shadow-sidebar top-1/2 bg-white dark:bg-gray-700 p-4 fixed">
+      <div className="translate-y-[-50%] bg-background shadow-sidebar top-1/2 dark:shadow-none dark:border-y-[1px] dark:border-r-[1px] dark:border-white p-4 fixed">
         {sidebarElements.map((elements) => {
           return (
             <div className="w-20 p-2" key={elements.name}>

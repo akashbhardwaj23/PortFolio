@@ -176,9 +176,6 @@ body {
   background-color: black;
 }
 
-/* .homeDiv2 {
-  transform: translate(-50%,-50%);
-} */
 
 @media only screen and (max-width:37.5em) {
   .heading {
@@ -191,12 +188,6 @@ body {
     font-size:2rem;
 }
 }
-
-/* .sidebar {
-  transform: translateY(-50%);
-  background: #fff;
-  box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
-} */
 
 @media only screen and (max-width: 56.25em) {
 
@@ -215,30 +206,6 @@ body {
   transition-timing-function: ease;
   transition-delay: 0s;
 
-}
-
-/* .sidebarA:hover {
-  background:rgba(81, 0, 255, 0.7)
-} */
-
-/* .darkSidebarA {
-  transition-property: background;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-} */
-
-/* .darkSidebarA:hover {
-  background: rgb(191, 190, 190);
-} */
-
-@media only screen and (max-width : 56.25em){
-  .picofme {
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-right: 1.2rem;
-
-  }
 }
 
 

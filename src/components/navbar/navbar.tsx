@@ -6,10 +6,7 @@ import { usePathname } from "next/navigation";
 
 
 export function Navbar() {
-
   const pathname = usePathname()
-  console.log("Pathname ", pathname)
-
 
   const navbarItems = [
     {

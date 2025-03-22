@@ -1,8 +1,7 @@
-
-
 import WorkInProgress from "@/components/workinprogess";
 
-export default function Projects(){
+
+export default function Contact(){
     return (
         <WorkInProgress />
     )
