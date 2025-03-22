@@ -39,7 +39,7 @@ export default function HomePage() {
 
   return (
     <div
-      className={`text-white h-screen relative dark:border-b-[1px] dark:border-white `}
+      className={`text-white relative dark:border-b-[1px] dark:border-white `}
     >
       {/* <div
         className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"

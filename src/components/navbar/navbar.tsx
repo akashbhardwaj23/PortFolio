@@ -36,7 +36,7 @@ export function Navbar() {
 
   return (
     <nav className="z-50 lg:sticky max-w-[90%] m-auto lg:top-0">
-      <section className="flex w-full justify-between items-center m-auto p-2">
+      <section className="flex w-full justify-between items-center m-auto p-4">
           <Link href={""} className="uppercase text-3xl font-bold tracking-widest relative font-convergence">
               AKB <span className="text-blue-700 font-bold text-8xl absolute -bottom-2">.</span>
           </Link>
