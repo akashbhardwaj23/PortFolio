@@ -114,9 +114,9 @@ export default function HomePage() {
 
       </div>
 
-      {/* <div className="mouseContainer">
+      <div className="absoulte bottom-[3%] left-1/2 translate-x-[-50%]">
         <div className="mouse"></div>
-      </div> */}
+      </div>
     </div>
   );
 }

@@ -241,14 +241,6 @@ body {
   }
 }
 
-.mouseContainer {
-
-  position: absolute;
-  bottom: 3%;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
 
 .mouse {
   width: 25px;
