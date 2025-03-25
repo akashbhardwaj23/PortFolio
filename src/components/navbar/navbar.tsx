@@ -45,13 +45,11 @@ export function Navbar() {
             {
               navbarItems.map((items) => {
                 const isActive = (pathname.includes(items.href) && pathname === items.href) ? true : false
-                console.log("isActive ", isActive)
-                console.log("Item name ", items.name)
                 return (
                   <Link
                     href={items.href}
                     key={items.name}
-                    className={`${isActive ? "text-blue-700" : "text-gray-800 dark:text-gray-200"} flex items-center justify-center gap-2 uppercase hover:text-blue-500 duration-200 ease-linear w-36 font-medium text-center`}
+                    className={`${isActive ? "text-blue-700" : "text-gray-800 dark:text-gray-200"} flex items-center justify-center gap-2 uppercase hover:text-blue-500 dark:hover:text-blue-500 duration-200 ease-linear w-36 font-medium text-center`}
                   >
                     {items.icon} {items.name}
                   </Link>

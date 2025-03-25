@@ -6,7 +6,6 @@ import Image from "next/image";
 import Button from "./Button";
 import { motion } from "framer-motion";
 import { useUserContext } from "@/context/UserContext";
-import { AnimatedCircularProgressBar } from "./ui/animatedprogress";
 import WorkInProgress from "./workinprogess";
 
 export default function HomePage() {
@@ -39,7 +38,7 @@ export default function HomePage() {
 
   return (
     <div
-      className={`text-white relative dark:border-b-[1px] dark:border-white `}
+      className={`text-foreground relative`}
     >
       {/* <div
         className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
@@ -74,11 +73,12 @@ export default function HomePage() {
       <WorkInProgress />
 
       <div className="translate-y-[-50%] bg-background shadow-sidebar top-1/2 dark:shadow-none dark:border-y-[1px] dark:border-r-[1px] dark:border-white p-4 fixed">
-        {sidebarElements.map((elements) => {
+        {sidebarElements.map((elements, index) => {
           return (
-            <div className="w-20 p-2" key={elements.name}>
+            <div className="w-20 p-2" key={index}>
               <Link
                 href={elements.href}
+                key={index}
                 target="_blank"
                 className={`w-full flex items-center justify-center p-2 rounded-lg no-underline hover:bg-gray-200 hover:shadow-md dark:hover:bg-[#bfbebe]`}
               >
@@ -101,9 +101,9 @@ export default function HomePage() {
 
       </div>
 
-      <div className="absoulte bottom-[3%] left-1/2 translate-x-[-50%]">
+      {/* <div className="absoulte bottom-[3%] left-1/2 translate-x-[-50%]">
         <div className="mouse"></div>
-      </div>
+      </div> */}
     </div>
   );
 }
