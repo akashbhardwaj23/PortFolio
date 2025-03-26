@@ -9,33 +9,11 @@ import { useUserContext } from "@/context/UserContext";
 import WorkInProgress from "./workinprogess";
 import HeroPage from "./hero";
 import { Icons } from "@/lib/icons/icons";
+import { contacts } from "@/lib/contact";
 
 export default function HomePage() {
   const { themeMode } = useUserContext();
   const [progessValue, setProgressValue] = useState(20);
-
-  const sidebarElements = [
-    {
-      name: "linkedin",
-      icons: Icons.linkedIn,
-      href: "https://www.linkedin.com/in/akash-bhardwaj-b70a38161/",
-    },
-    {
-      name: "github",
-      icons: Icons.github,
-      href: "https://github.com/akashbhardwaj23",
-    },
-    {
-      name: "twitter",
-      icons: Icons.twitter,
-      href: "https://twitter.com/AkashBh2024?t=ZIVvM108UpB5PssuhFIT6g&s=09",
-    },
-    {
-      name: "youtube",
-      icons: Icons.youtube,
-      href: "",
-    },
-  ];
 
 
   return (
@@ -75,8 +53,8 @@ export default function HomePage() {
       <HeroPage />
       {/* <WorkInProgress /> */}
 
-      <div className="translate-y-[-50%] bg-background shadow-sidebar top-1/2 dark:shadow-none dark:border-y-[1px] dark:border-r-[1px] dark:border-white p-4 fixed">
-        {sidebarElements.map((elements, index) => {
+      <div className="hidden lg:block translate-y-[-50%] bg-background shadow-sidebar top-1/2 dark:shadow-none dark:border-y-[1px] dark:border-r-[1px] dark:border-white p-4 fixed">
+        {contacts.map((elements, index) => {
           return (
             <div className="w-20 p-2" key={index}>
               <Link

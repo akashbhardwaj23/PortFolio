@@ -1,5 +1,10 @@
-import { SiGithub, SiLinkedin } from "react-icons/si";
-import { IoLogoTwitter } from "react-icons/io"
+import { SiLivechat } from "react-icons/si";
+import { BiLinkExternal } from "react-icons/bi";
+import { LiaBlogSolid } from "react-icons/lia";
+import { PiWebhooksLogo, PiBookOpenTextBold } from "react-icons/pi";
+import { contacts } from "@/lib/contact";
+import Link from "next/link";
+
 export default function HeroPage() {
   return (
     <div className="flex flex-col items-center mt-12">
@@ -15,12 +20,22 @@ export default function HeroPage() {
               </p>
             </div>
             <div>
-              <p className="lowercase text-neutral-7 dark:text-neutral-dark-7 text-balance text-sm">
+              <p className="lowercase text-gray-800/80 dark:text-gray-200 text-balance text-sm">
                 love building website and learning new things - been building
-                for 1 year now also i dabble into web3 and blockchain and bunch
+                for a year now i am dabbling into web3 and blockchain and bunch
                 of cool stuff
               </p>
-              <div className="flex gap-3 mt-3">enginnering</div>
+              <div className="flex gap-3 mt-3">
+                {mydomains.map((domain, index) => (
+                  <a
+                    href={domain.href}
+                    key={index}
+                    className="px-4 py-2 flex rounded-lg bg-gray-200/80 dark:bg-[#252525] text-center text-sm hover:bg-gray-300"
+                  >
+                    {domain.name}
+                  </a>
+                ))}
+              </div>
             </div>
           </aside>
         </section>
@@ -30,16 +45,27 @@ export default function HeroPage() {
             Projects
           </div>
           <ul className="flex flex-col gap-4">
-            <li>
-              <div className="flex gap-2 items-center justify-center">
-                Project 1
-              </div>
-            </li>
-            <li>
-              <div className="flex gap-2 items-center justify-center">
-                Project 1
-              </div>
-            </li>
+            {projects.map((project, index) => (
+              <li key={index}>
+                <div className="flex gap-4">
+                  <div className="w-full max-w-20 flex sm:justify-end">
+                    <div className="flex justify-center p-2 rounded-lg text-center hover:bg-gray-300">
+                      {<project.icon className="w-6 h-6" />}
+                    </div>
+                  </div>
+                  <div>
+                    <Link href={""}>
+                      <header className="flex items-center gap-2 lowercase text-lg font-convergence font-bold hover:cursor-pointer hover:text-gray-800 dark:hover:text-gray-400/80">
+                        {project.name} {<BiLinkExternal className="w-4 h-4" />}
+                      </header>
+                    </Link>
+                    <p className="text-gray-800/80 dark:text-gray-200 lowercase text-pretty text-sm">
+                      {project.text}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            ))}
           </ul>
         </section>
 
@@ -48,20 +74,68 @@ export default function HeroPage() {
             Contacts
           </div>
           <ul className="flex gap-4">
-            <li>
-              <a
-                className="px-8 py-2 flex rounded-lg bg-gray-200/80 dark:bg-[#252525] text-center text-sm hover:bg-gray-300"
-                href="https://github.com/akashbhardwaj23"
-              >
-                <div className="flex justify-center items-center gap-2 font-poppins">
-                  <SiGithub className="w-5 h-5 text-foreground" />
-                  Github
-                </div>
-              </a>
-            </li>
+            {contacts.map((contact, index) => (
+              <li key={index}>
+                <a
+                  className="px-8 py-2 flex rounded-lg text-center text-sm"
+                  href={contact.href}
+                >
+                  <div className="flex justify-center items-center bg-gray-200/80 dark:text-[#252525] hover:text-gray-200 dark:hover:text-gray-800 gap-2 font-poppins">
+                    {<contact.icon className="w-5 h-5 text-foreground" />}
+                    {contact.name}
+                  </div>
+                </a>
+              </li>
+            ))}
           </ul>
         </section>
       </div>
     </div>
   );
 }
+
+const mydomains = [
+  {
+    name: "engineering",
+    href: "/engineering",
+  },
+  {
+    name: "web3",
+    href: "/web3",
+  },
+  {
+    name: "solana",
+    href: "/solana",
+  },
+  {
+    name: "blockchain",
+    href: "/blockchain",
+  },
+];
+
+const projects = [
+  {
+    name: "chat app",
+    icon: SiLivechat,
+    href: "/chatapp",
+    text: "this application is a chat app that allows users to chat with each other and allows them to create rooms and invite friends to join.",
+  },
+  {
+    name: "web3 wallet",
+    icon: PiWebhooksLogo,
+    href: "/web3wallet",
+    text: "this application is a web3 wallet that allows users to store and send cryptocurrencies like solana and ethereum.",
+  },
+  {
+    name: "blog-app",
+    icon: LiaBlogSolid,
+    href: "/blogapp",
+    text: "this application is a blogging platform that allows users to create and publish blog posts.",
+  },
+  {
+    name: "texttopdf",
+    icon: PiBookOpenTextBold,
+    href: "/texttopdf",
+    text: "this application is a text to pdf converter that allows users to convert text to pdf.",
+  },
+];
