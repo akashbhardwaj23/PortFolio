@@ -4,7 +4,7 @@ import { AnimatedCircularProgressBar } from "./ui/animatedprogress";
 import { useUserContext } from "@/context/UserContext";
 
 export default function WorkInProgress() {
-  const [progessValue, setProgressValue] = useState(40);
+  const [progessValue, setProgressValue] = useState(50);
   const { themeMode } = useUserContext();
 
   return (
