@@ -3,12 +3,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "./Button";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { useUserContext } from "@/context/UserContext";
-import WorkInProgress from "./workinprogess";
+// import WorkInProgress from "./workinprogess";
 import HeroPage from "./hero";
-import { Icons } from "@/lib/icons/icons";
 import { contacts } from "@/lib/contact";
 
 export default function HomePage() {

@@ -10,10 +10,10 @@ export default function HeroPage() {
     <div className="flex flex-col items-center mt-12">
       <div className="w-1/2 p-4 gap-8">
         <section>
-          <h1 className="heading text-3xl tracking-wider text-primary font-convergence">
+          <h1 className="heading sm:text-3xl text-lg tracking-tighter md:tracking-wider text-primary font-convergence mb-4 sm:mb-0">
             Hey, Akash This Side
           </h1>
-          <aside className="flex flex-col sm:flex-row gap-2 mt-4 px-10 font-poppins">
+          <aside className="flex flex-col flex-row sm:gap-2 gap-4 mt-4 px-10 font-poppins">
             <div className="w-full max-w-12 flex sm:justify-end">
               <p className="lowercase text-neutral-8 dark:text-neutral-dark-8 text-balance text-md">
                 *
@@ -41,24 +41,26 @@ export default function HeroPage() {
         </section>
 
         <section className="flex flex-col gap-4 mt-10">
-          <div className="heading text-lg font-bold flex flex-col sm:flex-row gap-2 mt-4 font-poppins">
+          <div className="heading text-lg sm:font-bold flex flex-col sm:flex-row gap-2 mt-4 font-poppins">
             Projects
           </div>
           <ul className="flex flex-col gap-4">
             {projects.map((project, index) => (
               <li key={index}>
                 <div className="flex gap-4">
-                  <div className="w-full max-w-20 flex sm:justify-end">
+                  <div className="w-full max-w-20 flex justify-end">
                     <div className="flex justify-center p-2 rounded-lg text-center hover:bg-gray-300">
                       {<project.icon className="w-6 h-6" />}
                     </div>
                   </div>
                   <div>
-                    <Link href={""}>
-                      <header className="flex items-center gap-2 lowercase text-lg font-convergence font-bold hover:cursor-pointer hover:text-gray-800 dark:hover:text-gray-400/80">
+                    
+                      <header className="lowercase text-lg mb-2 sm:mb-0 font-convergence hover:cursor-pointer hover:text-gray-800 dark:hover:text-gray-400/80"> 
+                      <Link href={""} className="flex items-center gap-4 sm:gap-2">
                         {project.name} {<BiLinkExternal className="w-4 h-4" />}
+                        </Link>
                       </header>
-                    </Link>
+                    
                     <p className="text-gray-800/80 dark:text-gray-200 lowercase text-pretty text-sm">
                       {project.text}
                     </p>
@@ -73,15 +75,15 @@ export default function HeroPage() {
           <div className="heading text-lg font-bold flex flex-col sm:flex-row gap-2 mt-4 font-poppins">
             Contacts
           </div>
-          <ul className="flex gap-4">
+          <ul className="sm:flex grid grid-cols-2 gap-4">
             {contacts.map((contact, index) => (
               <li key={index}>
                 <a
-                  className="px-8 py-2 flex rounded-lg text-center text-sm"
+                  className="flex text-center text-sm"
                   href={contact.href}
                 >
-                  <div className="flex justify-center items-center bg-gray-200/80 dark:text-[#252525] hover:text-gray-200 dark:hover:text-gray-800 gap-2 font-poppins">
-                    {<contact.icon className="w-5 h-5 text-foreground" />}
+                  <div className="flex justify-center items-center px-8 py-2 rounded-lg bg-gray-200/80 dark:bg-[#252525] hover:text-gray-200 dark:hover:text-gray-800 gap-2 font-poppins">
+                    {<contact.icon className="w-5 h-5 text-foreground mr-2" />}
                     {contact.name}
                   </div>
                 </a>
