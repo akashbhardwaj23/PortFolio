@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function HeroPage() {
   return (
     <div className="flex flex-col items-center mt-12">
-      <div className="w-1/2 p-4 gap-8">
+      <div className="sm:w-1/2 w-[90%] p-4 gap-8">
         <section>
           <h1 className="heading sm:text-3xl text-lg tracking-tighter md:tracking-wider text-primary font-convergence mb-4 sm:mb-0">
             Hey, Akash This Side
@@ -71,11 +71,11 @@ export default function HeroPage() {
           </ul>
         </section>
 
-        <section className="flex flex-col gap-4 mt-8 font-poppins">
+        <section className="flex flex-col gap-4 mt-8 font-poppins h-96 sm:h-44">
           <div className="heading text-lg font-bold flex flex-col sm:flex-row gap-2 mt-4 font-poppins">
             Contacts
           </div>
-          <ul className="sm:flex grid grid-cols-2 gap-4">
+          <ul className="sm:flex grid grid-cols-2 gap-4 px-4 sm:px-0">
             {contacts.map((contact, index) => (
               <li key={index}>
                 <a

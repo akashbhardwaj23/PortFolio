@@ -3,7 +3,9 @@ export default function About() {
   return (
     <div className="flex flex-col items-center justify-center mt-10">
       <div className="w-full">
-        <h1 className="text-center sm:text-4xl text-7xl font-bold mb-10 sm:mb-0">About</h1>
+        <div className="w-1/2 mx-auto px-4 sm:px-0">
+        <h1 className="sm:text-4xl text-7xl font-bold mb-10 sm:mb-0">About</h1>
+        </div>
         {/* <WorkInProgress /> */}
         <Card />
       </div>
