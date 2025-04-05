@@ -27,13 +27,12 @@ export default function HeroPage() {
               </p>
               <div className="flex gap-3 mt-3">
                 {mydomains.map((domain, index) => (
-                  <a
-                    href={domain.href}
+                  <div
                     key={index}
                     className="px-4 py-2 flex rounded-lg bg-gray-200/80 dark:bg-[#252525] text-center text-sm hover:bg-gray-300"
                   >
                     {domain.name}
-                  </a>
+                  </div>
                 ))}
               </div>
             </div>
