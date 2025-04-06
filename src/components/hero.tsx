@@ -81,7 +81,7 @@ export default function HeroPage() {
                   className="flex text-center text-sm"
                   href={contact.href}
                 >
-                  <div className="flex justify-center items-center px-8 py-2 rounded-lg bg-gray-200/80 dark:bg-[#252525] hover:text-gray-200 dark:hover:text-gray-800 gap-2 font-poppins">
+                  <div className="flex justify-center items-center px-8 py-2 rounded-lg bg-gray-200/80 dark:bg-[#252525] hover:text-gray-500 dark:hover:text-gray-400 gap-2 font-poppins">
                     {<contact.icon className="w-5 h-5 text-foreground mr-2" />}
                     {contact.name}
                   </div>
