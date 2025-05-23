@@ -6,8 +6,11 @@ import Image from "next/image";
 // import { motion } from "framer-motion";
 import { useUserContext } from "@/context/UserContext";
 // import WorkInProgress from "./workinprogess";
-import HeroPage from "./hero";
+import HeroPage from "./home";
 import { contacts } from "@/lib/contact";
+import {AnimatePresence, AnimateSharedLayout, LayoutGroup, motion} from "motion/react"
+
+
 
 export default function HomePage() {
   const { themeMode } = useUserContext();
@@ -52,14 +55,17 @@ export default function HomePage() {
       {/* <WorkInProgress /> */}
 
       <div className="hidden lg:block translate-y-[-50%] bg-background shadow-sidebar top-1/2 dark:shadow-none dark:border-y-[1px] dark:border-r-[1px] dark:border-white p-4 fixed">
-        {contacts.map((elements, index) => {
+          {contacts.map((elements, index) => {
           return (
             <div className="w-20 p-2" key={index}>
-              <Link
+              <motion.div
+              layoutId={`item-${index}`}
+              className="rounded-lg hover:bg-gray-200 hover:shadow-md dark:hover:bg-[#bfbebe]">
+                <Link
                 href={elements.href}
                 key={index}
                 target="_blank"
-                className={`w-full flex items-center justify-center p-2 rounded-lg no-underline hover:bg-gray-200 hover:shadow-md dark:hover:bg-[#bfbebe]`}
+                className={`w-full flex items-center justify-center p-2 no-underline`}
               >
                 {themeMode === "light" ? (
                   <Image
@@ -74,10 +80,10 @@ export default function HomePage() {
                    </>
                 )}
               </Link>
+              </motion.div>
             </div>
           );
         })}
-
       </div>
 
       {/* <div className="absoulte bottom-[3%] left-1/2 translate-x-[-50%]">

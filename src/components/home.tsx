@@ -81,8 +81,8 @@ export default function HeroPage() {
                   className="flex text-center text-sm"
                   href={contact.href}
                 >
-                  <div className="flex justify-center items-center px-8 py-2 rounded-lg bg-gray-200/80 dark:bg-[#252525] hover:text-gray-500 dark:hover:text-gray-400 gap-2 font-poppins">
-                    {<contact.icon className="w-5 h-5 text-foreground mr-2" />}
+                  <div className="flex justify-center items-center px-8 py-2 group rounded-lg bg-gray-200/80 dark:bg-[#252525] hover:text-gray-500 dark:hover:text-gray-400 gap-2 font-poppins">
+                    {<contact.icon className="w-5 h-5 text-foreground group-hover:text-blue-500" />}
                     {contact.name}
                   </div>
                 </a>
@@ -120,6 +120,13 @@ const projects = [
     icon: SiLivechat,
     href: "/chatapp",
     text: "this application is a chat app that allows users to chat with each other and allows them to create rooms and invite friends to join.",
+  },
+
+   {
+    name: "Amply",
+    icon: SiLivechat,
+    href: "/chatapp",
+    text: "Amply Allow the user to get a charging for there electronics with solana.",
   },
   {
     name: "web3 wallet",

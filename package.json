@@ -17,6 +17,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.5.0",
     "lucide-react": "^0.483.0",
+    "motion": "^12.12.2",
     "myportfolio2": "file:",
     "next": "15.2.3",
     "react": "19.0.0",

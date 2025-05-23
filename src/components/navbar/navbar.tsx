@@ -12,22 +12,22 @@ export function Navbar() {
     {
       name : "Home",
       href : "/",
-      icon : <HomeIcon width={30} />
+      icon : <HomeIcon width={20} />
     },
     {
       name : "About",
       href : "/about",
-      icon : <Info width={30} />
+      icon : <Info width={20} />
     },
     {
       name : "Project",
       href : "/projects",
-      icon : <TerminalIcon width={30} />
+      icon : <TerminalIcon width={20} />
     },
     {
       name : "Contact",
       href : "/contact",
-      icon : <CircleUserRound width={30} />
+      icon : <CircleUserRound width={20} />
     }
   ]
 
@@ -49,9 +49,9 @@ export function Navbar() {
                   <Link
                     href={items.href}
                     key={items.name}
-                    className={`${isActive ? "text-blue-700" : "text-gray-800 dark:text-gray-200"} flex items-center justify-center gap-2 uppercase hover:text-blue-500 dark:hover:text-blue-500 duration-200 ease-linear w-36 font-medium text-center`}
+                    className={`${isActive ? "text-blue-600" : "text-gray-800 dark:text-gray-200"} flex items-center text-lg justify-center gap-2 uppercase hover:text-blue-500 dark:hover:text-blue-500 duration-200 ease-linear w-36 font-medium text-center`}
                   >
-                    {items.icon} {items.name}
+                    <span>{items.icon}</span> <span>{items.name}</span>
                   </Link>
                 )
               })

@@ -15,7 +15,7 @@ export default function About() {
 
 function Card() {
   return (
-    <div className="sm:w-1/2 w-[70%] flex flex-col sm:p-8 p-4 mx-auto gap-4 text-2xl sm:text-balance">
+    <div className="sm:w-1/2 w-[70%] flex flex-col sm:p-8 p-4 mx-auto gap-4 text-xl sm:text-balance">
       <div className="flex gap-4">
         <h1 className="lowercase text-neutral-8 dark:text-neutral-dark-8 text-balance text-md">
           *
