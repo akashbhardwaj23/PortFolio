@@ -1,5 +1,5 @@
 import { Icons } from "./icons/icons";
-import { SiGithub, SiLinkedin, SiLivechat, SiYoutube } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiYoutube } from "react-icons/si";
 import { IoLogoTwitter } from "react-icons/io";
 
 export const contacts = [
